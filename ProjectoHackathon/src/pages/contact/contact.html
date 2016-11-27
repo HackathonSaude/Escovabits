@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Registros
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let contact of contacts">
+      <ion-avatar item-left>
+        <img src="assets/img/img_tuto2.png">
+      </ion-avatar>
+      <!--<ion-icon name="ionic" item-left></ion-icon>-->
+      <h2>{{contact.nome}} </h2>
+      <h3>Solicitação de coleta • 27/11/2016</h3>
+      <p>Status: {{contact.status}}</p>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>

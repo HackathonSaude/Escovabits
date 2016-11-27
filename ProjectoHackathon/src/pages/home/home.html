@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Rotas de coleta</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-card>
+
+    <img src="assets/img/map_img.png"/>
+
+    <ion-card-content>
+      <h2 class="card-title">
+        Segunda-feira I • 5 coletas
+      </h2>
+      <p>
+        {{duracao}}
+      </p>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="navigate" icon-left (click)="verRota()">
+          <ion-icon name='map'></ion-icon>
+          Ver rota
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="danger" icon-left>
+          Iniciar Rota
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+  
+</ion-content>
